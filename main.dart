@@ -7,7 +7,6 @@ import 'dart:math';
 import 'dart:async';
 import 'package:image_picker/image_picker.dart';
 
-//uygulamanın başlatılması
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -16,9 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter',
       theme: ThemeData(
-        primarySwatch: Colors.blue, //ana ekran üst kısım rengi
+        primarySwatch: Colors.blue, 
       ),
-      home: MyHomePage(baslik: 'Fotoğraf Şifreleme Uygulaması'), //ana ekran başlığı
+      home: MyHomePage(baslik: 'Fotoğraf Şifreleme Uygulaması'),
     );
   }
 }
@@ -146,6 +145,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   List<int> _image;
   var key = 'dd121e36961a04627eacff629765dd3528471ed745c1e32222db4a8a5f3421c4';
+  //şifreleme için kullanılacak key
 
   void sifrele() {
     widget.sifrele(key).then((List<int> image) {
