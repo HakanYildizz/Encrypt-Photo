@@ -64,8 +64,7 @@ class MyHomePage extends StatefulWidget {
             avatar.setPixelSafe(
                 X,
                 Y,
-                xrlist[
-                i]); //xr listesindeki elemanları sırası ile renk byte'ı olarak setPixel yapıyor.
+                xrlist[i]); //xr listesindeki elemanları sırası ile renk byte'ı olarak setPixel yapıyor.
             X--;
             Y--;
           }
